@@ -50,7 +50,7 @@ def fill_tweets():
 	tweets_posted = 0
 	
 	how_many_tweets = int(raw_input('How many tweets? '))
-	max_time_between_tweets = int(raw_input('What do you want the max time to be? '))
+	max_time_between_tweets = int(raw_input('What do you want the max time between tweets to be? '))
 	
 	with open('tweets.txt','r') as input:
 		tweets = input.read().split('!@#$%^&*()')
