@@ -66,7 +66,7 @@ def fill_tweets(how_many_tweets,max_time_between_tweets):
 			tweets = tweets[how_many_tweets:]
 
 			with open('tweets.txt','w') as output:
-				output.write(str('!@#$%^&*()'.join(tweets).replaceAll('amp;','')))
+				output.write(str('!@#$%^&*()'.join(tweets).replace('amp;','')))
 
 def scrape_for_tweets(time_to_run):
 	ret = []
