@@ -46,9 +46,13 @@ def tweet(tweet):
 	br.submit()
 
 
-def fill_tweets(how_many_tweets,max_time_between_tweets):
+def fill_tweets():
 	tweets_posted = 0
-
+	how_many_tweets = int(raw_input('How many tweets? '))
+	
+	
+	max_time_between_tweets = int(raw_input('What do you want the max time to be? '))
+	
 	with open('tweets.txt','r') as input:
 		tweets = input.read().split('!@#$%^&*()')
 		tweets = [x.strip() for x in tweets]
@@ -93,7 +97,7 @@ def main():
 	scrape_for_tweets(5)
 	setup_browser()
 	login_twitter()
-	fill_tweets(20,10)
+	fill_tweets()
 
 
 if __name__ == '__main__':
