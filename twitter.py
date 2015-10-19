@@ -93,7 +93,7 @@ def main():
 	scrape_for_tweets(5)
 	setup_browser()
 	login_twitter()
-	fill_tweets(20,60)
+	fill_tweets(20,10)
 
 
 if __name__ == '__main__':
