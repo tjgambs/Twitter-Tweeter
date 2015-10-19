@@ -24,7 +24,7 @@ def setup_browser():
 def login_twitter():
 	response = br.open("https://twitter.com/login?lang=en")
 
-	username = raw_input('Username or Email: ').upper()
+	username = raw_input('Username or Email: ')
 	password = getpass.getpass('Password: ')
 	
 	br.select_form(nr=1)
